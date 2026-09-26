@@ -1,0 +1,9 @@
+# application.yml is parsed by SnakeYAML inside Spring Boot -> snakeyaml shows up as FRAMEWORK
+server:
+  port: 8080
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616
+  jms:
+    listener:
+      auto-startup: false

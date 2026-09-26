@@ -1,0 +1,170 @@
+[
+  {
+    "cve": "CVE-2023-46604",
+    "package": "org.apache.activemq:activemq-client",
+    "group": "org.apache.activemq",
+    "artifact": "activemq-client",
+    "version": "5.18.2",
+    "severity": "Critical",
+    "verdict": "NOT-FOUND",
+    "scope": "",
+    "resolved_version": "",
+    "introduced_by": [],
+    "jar": "",
+    "reached_classes": 0,
+    "total_classes": 0,
+    "sample_path": [],
+    "hint_classes": [],
+    "hint_reached": [],
+    "autoconfigs": [],
+    "spi": [],
+    "config_mentions": [],
+    "osv": "",
+    "fixed_versions": [],
+    "notes": []
+  },
+  {
+    "cve": "CVE-2022-1471",
+    "package": "org.yaml:snakeyaml",
+    "group": "org.yaml",
+    "artifact": "snakeyaml",
+    "version": "1.33",
+    "severity": "High",
+    "verdict": "FRAMEWORK",
+    "scope": "compile",
+    "resolved_version": "1.33",
+    "introduced_by": [
+      "org.springframework.boot:spring-boot-starter-web:3.1.5"
+    ],
+    "jar": "/Users/alex/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar",
+    "reached_classes": 0,
+    "total_classes": 225,
+    "sample_path": [
+      "org.springframework.boot.env.YamlPropertySourceLoader",
+      "org.springframework.boot.env.OriginTrackedYamlLoader",
+      "org.yaml.snakeyaml.Yaml",
+      "org.yaml.snakeyaml.constructor.Constructor"
+    ],
+    "hint_classes": [
+      "org.yaml.snakeyaml.constructor.Constructor"
+    ],
+    "hint_reached": [],
+    "autoconfigs": [],
+    "spi": [
+      "org.springframework.boot.env.YamlPropertySourceLoader"
+    ],
+    "config_mentions": [],
+    "osv": "",
+    "fixed_versions": [],
+    "notes": [
+      "hint: SnakeYAML: exploitable when parsing untrusted YAML with the default Constructor; SafeConstructor is fine",
+      "hinted vulnerable classes are reachable through the framework path"
+    ]
+  },
+  {
+    "cve": "CVE-2023-24998",
+    "package": "commons-fileupload:commons-fileupload",
+    "group": "commons-fileupload",
+    "artifact": "commons-fileupload",
+    "version": "1.4",
+    "severity": "High",
+    "verdict": "UNUSED",
+    "scope": "compile",
+    "resolved_version": "1.4",
+    "introduced_by": [
+      "commons-fileupload:commons-fileupload:1.4"
+    ],
+    "jar": "/Users/alex/.m2/repository/commons-fileupload/commons-fileupload/1.4/commons-fileupload-1.4.jar",
+    "reached_classes": 0,
+    "total_classes": 49,
+    "sample_path": [],
+    "hint_classes": [],
+    "hint_reached": [],
+    "autoconfigs": [],
+    "spi": [],
+    "config_mentions": [],
+    "osv": "",
+    "fixed_versions": [],
+    "notes": []
+  },
+  {
+    "cve": "CVE-2021-29425",
+    "package": "commons-io:commons-io",
+    "group": "commons-io",
+    "artifact": "commons-io",
+    "version": "2.2",
+    "severity": "Medium",
+    "verdict": "UNUSED",
+    "scope": "compile",
+    "resolved_version": "2.2",
+    "introduced_by": [
+      "commons-fileupload:commons-fileupload:1.4"
+    ],
+    "jar": "/Users/alex/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar",
+    "reached_classes": 0,
+    "total_classes": 108,
+    "sample_path": [],
+    "hint_classes": [
+      "org.apache.commons.io.FilenameUtils"
+    ],
+    "hint_reached": [],
+    "autoconfigs": [],
+    "spi": [],
+    "config_mentions": [],
+    "osv": "",
+    "fixed_versions": [],
+    "notes": [
+      "hint: commons-io FilenameUtils.normalize path traversal"
+    ]
+  },
+  {
+    "cve": "CVE-2020-15250",
+    "package": "junit:junit",
+    "group": "junit",
+    "artifact": "junit",
+    "version": "4.12",
+    "severity": "Medium",
+    "verdict": "NOT-SHIPPED",
+    "scope": "test",
+    "resolved_version": "4.12",
+    "introduced_by": [
+      "junit:junit:4.12"
+    ],
+    "jar": "/Users/alex/.m2/repository/junit/junit/4.12/junit-4.12.jar",
+    "reached_classes": 0,
+    "total_classes": 0,
+    "sample_path": [],
+    "hint_classes": [],
+    "hint_reached": [],
+    "autoconfigs": [],
+    "spi": [],
+    "config_mentions": [],
+    "osv": "",
+    "fixed_versions": [],
+    "notes": []
+  },
+  {
+    "cve": "CVE-2021-44228",
+    "package": "org.apache.logging.log4j:log4j-core",
+    "group": "org.apache.logging.log4j",
+    "artifact": "log4j-core",
+    "version": "2.14.1",
+    "severity": "Critical",
+    "verdict": "NOT-FOUND",
+    "scope": "",
+    "resolved_version": "",
+    "introduced_by": [],
+    "jar": "",
+    "reached_classes": 0,
+    "total_classes": 0,
+    "sample_path": [],
+    "hint_classes": [],
+    "hint_reached": [],
+    "autoconfigs": [],
+    "spi": [],
+    "config_mentions": [],
+    "osv": "",
+    "fixed_versions": [],
+    "notes": []
+  }
+]

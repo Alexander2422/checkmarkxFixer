@@ -1,0 +1,15 @@
+{
+  "_comment": "Run: python cx_reach.py --explain-hints for the full explanation. Optional. Maps a CVE to the classes/packages that contain the vulnerable code (from the advisory or the fix commit). With a hint, the script can tell REACHABLE apart from USED-SAFE?. Class-level only: a referenced class is not proof the vulnerable method is called.",
+
+  "CVE-2023-46604": { "classes": ["org.apache.activemq.openwire"],
+                      "note": "ActiveMQ OpenWire unmarshalling (BaseDataStreamMarshaller.createThrowable)" },
+  "CVE-2022-1471":  { "classes": ["org.yaml.snakeyaml.constructor.Constructor"],
+                      "note": "SnakeYAML: exploitable when parsing untrusted YAML with the default Constructor; SafeConstructor is fine" },
+  "CVE-2021-44228": { "classes": ["org.apache.logging.log4j.core.lookup.JndiLookup"],
+                      "note": "Log4Shell" },
+  "CVE-2022-42889": { "classes": ["org.apache.commons.text.StringSubstitutor",
+                                  "org.apache.commons.text.lookup.StringLookupFactory"],
+                      "note": "Text4Shell" },
+  "CVE-2021-29425": { "classes": ["org.apache.commons.io.FilenameUtils"],
+                      "note": "commons-io FilenameUtils.normalize path traversal" }
+}
